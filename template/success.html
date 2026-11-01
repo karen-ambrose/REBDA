@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Recommendation Result</title>
+</head>
+<body>
+    <h2>Recommended Job Title:</h2>
+    <div id="recommended_job"></div>
+
+    <script>
+        // Fetch recommended job title from Flask API
+        fetch('/recommend', {
+            method: 'POST',
+            body: new FormData(document.getElementById('jobForm'))
+        })
+        .then(response => response.json())
+        .then(data => {
+            data.recommended_title = undefined;
+            document.getElementById('recommended_job').textContent = data.recommended_title;
+        })
+        .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
