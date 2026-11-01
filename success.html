@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+	<script src="assets/js/skills.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header-area {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-nav .nav {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .main-nav .nav li {
+            margin-right: 15px;
+        }
+        .main-nav .nav li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .main-nav .nav li a:hover {
+            color: #007bff;
+        }
+        .submenu ul {
+            display: none;
+            position: absolute;
+            background-color: #f8f9fa;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .submenu:hover ul {
+            display: block;
+        }
+        .submenu ul li {
+            clear: both;
+        }
+        .submenu ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .submenu ul li a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            Rebda
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Upload</a>
+                                <ul>
+                                    <li><a href="mydata.html" class="dropdown-item">My Data</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:;">Career</a>
+                                <ul>
+                                    <li><a href="jobs.html" class="dropdown-item">Job vacancies</a></li>
+                                    <li><a href="mycareer.html" class="dropdown-item">My Career Path</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="menu-trigger" href="#">
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+<div class="container">
+	<hi>3</hi>
+	<h1>3</h1>
+	<h5>2</h5>
+	<h1><b>Upload Success</b></h1>
+   <h3>Results:</h3>
+                 <ul>
+                     <li>Skills: .NET framework, web design</li>
+                     <li>Qualifications: BSc Computer science</li>
+                     <li>Your Interests: Designing, web development/li>
+                     <li>Your Goals: To expand my web dev horizon</li>
+                 </ul>
+                 <p>OCEAN scores</p>
+                 <ul>
+                     <li>Openness: 0.50</li>
+                     <li>Conscientiousness: 0.52</li>
+                     <li>Extraversion: 0.60</li>
+                     <li>Agreeableness: 0.62</li>
+                     <li>Neuroticism: 0.50</li>
+                 </ul>
+                 <h3>OCEAN Feedback:</h3>
+                 <ul>
+                     <li>You tend to be more outgoing in social situations.</li>
+                     <li>You tend to be more altruistic and cooperative.</li>
+		<li>You tend to be more self-disciplined and organized.</li>
+		<li>You tend to be more anxious and emotionally stable.</li>
+		<li>You tend to be more creative and open-minded.</li>
+                 </ul>
+               <p>MSCEIT scores</p>
+	<ul>
+        <li>Perceiving emotions score: 55</li>
+        <p>You may struggle to recognize emotions in yourself and others.</p>
+
+        <li>Facilitating thoughts score: 70</li>
+        <p>You may struggle to leverage your emotions to enhance cognitive processes.</p>
+
+        <li>Understanding emotions score: 60</li>
+        <p>You may struggle to understand how emotions combine, change, and progress over time.</p>
+
+        <li>Managing emotions score: 47</li>
+        <p>You may struggle to effectively control your emotional responses in challenging situations.</p>
+
+        <li>Final MSCEIT Score: 58.00</li>
+ 	</ul>
+</div>
+   // <script>
+//         document.addEventListener('DOMContentLoaded', function() {
+//             const resultsDiv = document.getElementById('results');
+//             const recommendationsDiv = document.getElementById('recommendations');
+
+//             const results = JSON.parse(sessionStorage.getItem('results'));
+
+//             if (results) {
+//                 resultsDiv.innerHTML = `
+//                 <h3>Results:</h3>
+//                 <ul>
+//                     <li>Skills: ${results.skills}</li>
+//                     <li>Qualifications: ${results.qualifications}</li>
+//                     <li>Your Interests: ${results.interests}</li>
+//                     <li>Your Goals: ${results.goals}</li>
+//                 </ul>
+//                 <p>OCEAN scores</p>
+//                 <ul>
+//                     <li>Openness: ${results.oceanScores.openness}</li>
+//                     <li>Conscientiousness: ${results.oceanScores.conscientiousness}</li>
+//                     <li>Extraversion: ${results.oceanScores.extraversion}</li>
+//                     <li>Agreeableness: ${results.oceanScores.agreeableness}</li>
+//                     <li>Neuroticism: ${results.oceanScores.neuroticism}</li>
+//                 </ul>
+//                 <h3>OCEAN Feedback:</h3>
+//                 <ul>
+//                     <li>${results.oceanFeedback.extroversion}</li>
+//                     <li>${results.oceanFeedback.agreeableness}</li>
+//                     <li>${results.oceanFeedback.conscientiousness}</li>
+//                     <li>${results.oceanFeedback.neuroticism}</li>
+//                     <li>${results.oceanFeedback.opennessToExperience}</li>
+//                 </ul>
+//                 <p>MSCEIT scores</p>
+//                 <ul>
+//                     <li>Perceiving emotions score: ${results.msceitScores.perceivingEmotionsScore}</li>
+//                     <p>${results.msceitScores.interpretations.perceivingEmotions}</p>
+//                     <li>Facilitating thoughts score: ${results.msceitScores.facilitatingThoughtScore}</li>
+//                     <p>${results.msceitScores.interpretations.facilitatingThought}</p>
+//                     <li>Understanding emotions score: ${results.msceitScores.understandingEmotionsScore}</li>
+//                     <p>${results.msceitScores.interpretations.understandingEmotions}</p>
+//                     <li>Managing emotions score: ${results.msceitScores.managingEmotionsScore}</li>
+//                     <p>${results.msceitScores.interpretations.managingEmotions}</p>
+//                     <li>Final MSCEIT Score: ${results.msceitScores.finalMsceitScore}</li>
+//                 </ul>
+//                 `;
+
+//                 // Fetch recommendations
+//                 fetch('/recommend', {
+//                     method: 'POST',
+//                     headers: {
+//                         'Content-Type': 'application/json'
+//                     },
+//                     body: JSON.stringify({
+//                         skills: results.skills,
+//                         scores: [
+//                             results.oceanScores.openness,
+//                             results.oceanScores.conscientiousness,
+//                             results.oceanScores.extraversion,
+//                             results.oceanScores.agreeableness,
+//                             results.oceanScores.neuroticism
+//                         ],
+//                         eq_score: results.msceitScores.finalMsceitScore
+//                     })
+//                 })
+//                 .then(response => response.json())
+//                 .then(data => {
+//                     var recommendations = data.recommended_titles;
+//                     recommendationsDiv.innerHTML = "<h3>Recommended Job Titles:</h3>";
+//                     recommendations.forEach(title => {
+//                         recommendationsDiv.innerHTML += "<p>" + title + "</p>";
+//                     });
+//                 })
+//                 .catch(error => {
+//                     console.error('Error:', error);
+//                 });
+//             } else {
+//                 resultsDiv.innerHTML = '<p>No results found. Please go back and submit the form.</p>';
+//             }
+//         });
+//     </script>
+
+</body>
+</html>

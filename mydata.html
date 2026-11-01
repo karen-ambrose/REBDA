@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Portal</title>
+    <link rel="stylesheet" href="assets/css/skills.css">
+	  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+</head>
+<body>
+
+<!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            Rebda
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+							<li class="nav-item nav-link active"><a href="index.html">Home</a></li>
+                    <li class="nav-item nav-link active"><a href="about.html">About</a></li>
+
+                            <li class="submenu">
+                                <a href="javascript:;">Upload</a>
+                                <ul>
+                                    <li><a href="mydata.html" class="dropdown-item">My Data</a></li>
+                                </ul>
+                            </li>
+							<li class="submenu">
+                                <a href="javascript:;">Career</a>
+                                <ul>
+									<li><a href="jobs.html" class="dropdown-item">Job vacancies</a></li>
+                             <li><a href="mycareer.html" class="dropdown-item">My Career Path</a></li>
+
+                                </ul>
+                            </li>
+                             </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+						</nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+<div class="container" id="job-results">
+
+    <form id="jobForm" action="/recommend" method="POST">
+		<h1>3</h1>
+		<h1>3</h1>
+        <h1>Welcome to the Upload Portal</h1>
+        <h2>Skills and Qualifications Upload</h2>
+
+        <label for="skills">Skills (i.e. Data analysis, C++, French):</label><br>
+        <input type="text" id="skills" name="skills" required><br><br>
+
+        <label for="qualifications">Qualifications (i.e. Bachelors in Science, MSc):</label><br>
+        <textarea id="qualifications" name="qualifications" rows="4" required></textarea><br><br>
+
+ <label for="interests">What are your interests?:</label><br>
+        <textarea id="interests" name="interests" rows="2" required></textarea><br><br>
+
+       <label for="goals">What are you goals?:</label><br>
+        <textarea id="goals" name="goals" rows="3" required></textarea><br><br>
+
+
+        <h2>Personality Traits Test</h2>
+        <p>The Ocean Model of Personality, commonly referred to as the Big Five personality traits, assesses personality across five dimensions:</p>
+
+        <ol>
+            <li>Openness</li>
+            <li>Conscientiousness</li>
+            <li>Extraversion</li>
+            <li>Agreeableness</li>
+            <li>Neuroticism</li>
+        </ol>
+
+        <p>Please rate the following statements on a scale of 1 to 5, where 1 = Disagree, 2 = Slightly disagree, 3 = Neutral, 4 = Slightly agree, and 5 = Agree.</p>
+
+        <div>
+            <label for="q1">1. I enjoy being the center of attention.</label>
+            <input type="number" id="q1" min="1" max="5" required>
+        </div>
+  <div>
+    <label for="q2">I tend to be skeptical of others' intentions.</label>
+    <input type="number" id="q2" min="1" max="5" required>
+  </div>
+
+  <div>
+    <label for="q3">I am very organized and efficient in my work.</label>
+    <input type="number" id="q3" min="1" max="5" required>
+  </div>
+
+  <div>
+    <label for="q4">I often worry about things going wrong.</label>
+    <input type="number" id="q4" min="1" max="5" required>
+  </div>
+
+  <div>
+    <label for="q5">I have a vivid imagination and enjoy thinking about new ideas.</label>
+    <input type="number" id="q5" min="1" max="5" required>
+  </div>
+
+  <div>
+    <label for="q6">I prefer to work alone rather than in a group.</label>
+    <input type="number" id="q6" min="1" max="5" required>
+  </div>
+
+  <div>
+    <label for="q7">I'm always willing to help others, even if it means sacrificing my own needs.</label>
+    <input type="number" id="q7" min="1" max="5" required>
+  </div>
+
+  <div>
+    <label for="q8">I often forget to do important tasks and miss deadlines.</label>
+    <input type="number" id="q8" min="1" max="5" required>
+  </div>
+
+  <div>
+    <label for="q9">I tend to be calm and emotionally stable, even in stressful situations.</label>
+    <input type="number" id="q9" min="1" max="5" required>
+  </div>
+
+  <div>
+    <label for="q10">I prefer to stick to familiar routines and dislike change.</label>
+    <input type="number" id="q10" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q11">I prefer to keep my emotions to myself rather than expressing them openly.</label>
+    <input type="number" id="q11" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q12">I believe that people should follow strict moral codes.</label>
+    <input type="number" id="q12" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q13">I am very detail-oriented and like to double-check my work.</label>
+    <input type="number" id="q13" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q14">I get stressed out easily and tend to worry a lot.</label>
+    <input type="number" id="q14" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q15">I enjoy exploring new ideas and learning about different cultures.</label>
+    <input type="number" id="q15" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q16">I prefer to be around people who are lively and social.</label>
+    <input type="number" id="q16" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q17">I try to be kind and considerate to everyone I meet.</label>
+    <input type="number" id="q17" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q18">I have a hard time staying organized and often feel overwhelmed.</label>
+    <input type="number" id="q18" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q19">I rarely get angry or upset, even in stressful situations.</label>
+    <input type="number" id="q19" min="1" max="5" required>
+  </div>
+  <div>
+    <label for="q20">I prefer to stick to tried-and-true methods rather than trying new approaches.</label>
+    <input type="number" id="q20" min="1" max="5" required>
+  </div>
+   <h2> MSCEIT™: Mayer-Salovey-Caruso Emotional Intelligence Test™</h2>
+            <p> The MSCEIT™ is a performance test of emotional intelligence</p>
+            <p>You will be tested on 4 categories:</p>
+            <p><strong>Perceiving and Identifying Emotions</strong> - the ability to recognize how you and those around you are feeling.
+
+<p><strong>Using Emotions to Facilitate Thought </strong>- the ability to generate emotion, and then reason with this
+            emotion.</p><p><strong>
+Understanding Emotions</strong> - the ability to understand complex emotions and emotional “chains,” and how
+            emotions transition from one stage to another.</p><p><strong>
+            Managing Emotions </strong>- the ability to manage emotions in yourself and in others.</p>
+            <p>Please answer sincerely.</p>
+            <h4>Category 1: Perceiving and Identifying Emotions</h4>
+           <h2>Faces Task:</h2>
+<ol>
+  <li>What emotion is the person in front of you expressing?
+    <ul>
+      <li><input type="radio" name="faces-task-1" value="a"> Happiness</li>
+      <li><input type="radio" name="faces-task-1" value="b"> Sadness</li>
+      <li><input type="radio" name="faces-task-1" value="c"> Anger</li>
+      <li><input type="radio" name="faces-task-1" value="d"> Fear</li>
+      <li><input type="radio" name="faces-task-1" value="e"> Surprise</li>
+    </ul>
+  </li>
+  <li>On a scale of 1-5, how strongly is the emotion in this facial expression being conveyed?
+    <ul>
+      <li><input type="radio" name="faces-task-2" value="a"> 1</li>
+      <li><input type="radio" name="faces-task-2" value="b"> 2</li>
+      <li><input type="radio" name="faces-task-2" value="c"> 3</li>
+      <li><input type="radio" name="faces-task-2" value="d"> 4</li>
+      <li><input type="radio" name="faces-task-2" value="e"> 5</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Pictures Task:</h2>
+<ol>
+  <li>What primary emotion does this image evoke for you?
+    <ul>
+      <li><input type="radio" name="pictures-task-1" value="a"> Joy</li>
+      <li><input type="radio" name="pictures-task-1" value="b"> Disgust</li>
+      <li><input type="radio" name="pictures-task-1" value="c"> Calmness</li>
+      <li><input type="radio" name="pictures-task-1" value="d"> Excitement</li>
+      <li><input type="radio" name="pictures-task-1" value="e"> Melancholy</li>
+    </ul>
+  </li>
+  <li>On a scale of 1-5, how intensely does this image express that emotion?
+    <ul>
+      <li><input type="radio" name="pictures-task-2" value="a"> 1</li>
+      <li><input type="radio" name="pictures-task-2" value="b"> 2</li>
+      <li><input type="radio" name="pictures-task-2" value="c"> 3</li>
+      <li><input type="radio" name="pictures-task-2" value="d"> 4</li>
+      <li><input type="radio" name="pictures-task-2" value="e"> 5</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Facilitating Thought:</h2>
+<h3>Facilitation Task:</h3>
+<ol>
+  <li>How might feeling happy influence your approach to a complex problem-solving task?
+    <ul>
+      <li><input type="radio" name="facilitation-task-1" value="a"> Increase flexibility and creativity</li>
+      <li><input type="radio" name="facilitation-task-1" value="b"> Decrease focus and attention to detail</li>
+      <li><input type="radio" name="facilitation-task-1" value="c"> Enhance analytical and logical thinking</li>
+      <li><input type="radio" name="facilitation-task-1" value="d"> Reduce persistence and motivation</li>
+      <li><input type="radio" name="facilitation-task-1" value="e"> Both a and c</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Sensations Task:</h3>
+<ol>
+  <li>Which emotion would you most associate with the sensation of a cool breeze?
+    <ul>
+      <li><input type="radio" name="sensations-task-1" value="a"> Fear</li>
+      <li><input type="radio" name="sensations-task-1" value="b"> Anger</li>
+      <li><input type="radio" name="sensations-task-1" value="c"> Contentment</li>
+      <li><input type="radio" name="sensations-task-1" value="d"> Sadness</li>
+      <li><input type="radio" name="sensations-task-1" value="e"> Surprise</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Understanding Emotions:</h2>
+<h3>Changes Task:</h3>
+<ol>
+  <li>If someone initially felt content, how might that emotion transition into one of joy?
+    <ul>
+      <li><input type="radio" name="changes-task-1" value="a"> With the addition of a positive event or achievement</li>
+      <li><input type="radio" name="changes-task-1" value="b"> Through a sense of gratitude and appreciation</li>
+      <li><input type="radio" name="changes-task-1" value="c"> As a result of reduced stress or worry</li>
+      <li><input type="radio" name="changes-task-1" value="d"> By being in the company of loved ones</li>
+      <li><input type="radio" name="changes-task-1" value="e"> All of the above</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Blends Task:</h3>
+<ol>
+  <li>If a person lost a loved one, what primary emotions would they likely experience?
+    <ul>
+      <li><input type="radio" name="blends-task-1" value="a"> Happiness and relief</li>
+      <li><input type="radio" name="blends-task-1" value="b"> Anger and guilt</li>
+      <li><input type="radio" name="blends-task-1" value="c"> Sadness and loneliness</li>
+      <li><input type="radio" name="blends-task-1" value="d"> Fear and confusion</li>
+      <li><input type="radio" name="blends-task-1" value="e"> Disgust and indifference</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Managing Emotions:</h2>
+<h3>Emotion Management Task:</h3>
+<ol>
+  <li>In a situation where you're feeling angry, which response strategy would be most effective for regulating that emotion?
+    <ul>
+      <li><input type="radio" name="emotion-management-task-1" value="a"> Ignore the feeling and suppress it</li>
+      <li><input type="radio" name="emotion-management-task-1" value="b"> Vent the anger through aggressive behavior</li>
+      <li><input type="radio" name="emotion-management-task-1" value="c"> Reframe the situation and try to empathize</li>
+      <li><input type="radio" name="emotion-management-task-1" value="d"> Distract yourself with another activity</li>
+      <li><input type="radio" name="emotion-management-task-1" value="e"> Discuss the anger directly with the source</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Emotional Relations Task:</h3>
+<ol>
+  <li>If a friend is upset, what is the most empathetic way to respond and provide support?
+    <ul>
+      <li><input type="radio" name="emotional-relations-task-1" value="a"> Offer advice and tell them how to fix the problem</li>
+      <li><input type="radio" name="emotional-relations-task-1" value="b"> Validate their feelings and listen without judgment</li>
+      <li><input type="radio" name="emotional-relations-task-1" value="c"> Try to cheer them up and make them feel better</li>
+      <li><input type="radio" name="emotional-relations-task-1" value="d"> Avoid them until they're feeling better</li>
+      <li><input type="radio" name="emotional-relations-task-1" value="e"> Tell them to get over it and move on</li>
+    </ul>
+  </li>
+</ol>
+       <button type="submit">Submit</button>
+
+     <!-- Display recommendation result if available -->
+    </form>
+
+    <div id="results">
+        <!-- Results will be displayed here -->
+
+<div id="coursesList"></div>
+</div>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const career_form = document.getElementById('career');
+    career_form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Redirect to success.html
+      window.location.href = 'success.html';
+    });
+  });
+
+  const form = document.getElementById('jobForm');
+  form.addEventListener('submit', function(event) {
+	  event.preventDefault();
+
+	  const skills = document.getElementById('skills').value;
+	  const qualifications = document.getElementById('qualifications').value;
+	  const goals = document.getElementById('goals').value;
+	  const interests = document.getElementById('interests').value;
+
+	  const qValues = [];
+	  for (let i = 1; i <= 20; i++) {
+		  const answer = document.getElementById(`q${i}`).value;
+		  qValues.push(parseInt(answer));
+	  }
+
+	  // Ensure we have exactly 20 responses
+	  if (qValues.length !== 20) {
+		  throw new Error("Invalid number of responses");
+	  }
+
+	  // Calculate scores based on provided formula
+	  let e = 0;
+	  let a = 0;
+	  let c = 0;
+	  let n = 0;
+	  let o = 0;
+
+	  qValues.forEach((q, i) => {
+		  if (!isNaN(q)) {
+			  if ([0, 8, 16].includes(i)) {
+				  e += parseInt(q);
+			  } else if ([4, 12].includes(i)) {
+				  e -= parseInt(q);
+			  } else if (i === 1) {
+				  a -= parseInt(q);
+			  } else if ([5, 13].includes(i)) {
+				  a += parseInt(q);
+			  } else if (i === 2) {
+				  c += parseInt(q);
+			  } else if ([6, 14].includes(i)) {
+				  c -= parseInt(q);
+			  } else if (i === 3) {
+				  n -= parseInt(q);
+			  } else if ([7, 15].includes(i)) {
+				  n += parseInt(q);
+			  } else if (i === 9) {
+				  o += parseInt(q);
+			  } else if ([10, 11].includes(i)) {
+				  o -= parseInt(q);
+			  }
+		  } else {
+			  throw new Error("Invalid response value");
+		  }
+	  });
+
+	  // Normalize scores to range from 0.0 to 1.0
+	  const normalizeScore = (score) => {
+		  return (score + 10) / 20; // Normalize to range 0.0 to 1.0
+	  };
+
+	  // Calculate the normalized scores
+	  const eScore = normalizeScore(e / 20);
+	  const aScore = normalizeScore(a / 20);
+	  const cScore = normalizeScore(c / 20);
+	  const nScore = normalizeScore(n / 20);
+	  const oScore = normalizeScore(o / 20);
+
+	  // Define feedback object with messages
+	  const feedback = {
+		  Extroversion: {
+			  core: eScore,
+			  feedback: `You tend to be more ${eScore > 0.4 ? 'outgoing' : 'introverted'} in social situations.`
+		  },
+		  Agreeableness: {
+			  core: aScore,
+			  feedback: `You tend to be more ${aScore > 0.4 ? 'altruistic' : 'skeptical'} and cooperative.`
+		  },
+		  Conscientiousness: {
+			  core: cScore,
+			  feedback: `You tend to be more ${cScore > 0.4 ? 'self-disciplined' : 'spontaneous'} and organized.`
+		  },
+		  Neuroticism: {
+			  core: nScore,
+			  feedback: `You tend to be more ${nScore < 0.4 ? 'resilient' : 'anxious'} and emotionally stable.`
+		  },
+		  OpennessToExperience: {
+			  core: oScore,
+			  feedback: `You tend to be more ${oScore > 0.4 ? 'creative' : 'traditional'} and open-minded.`
+		  }
+	  };
+
+	// Assume we have the number of correct answers for each section
+let correctAnswersPerceiving = 8; // number of correct answers for perceiving emotions
+let correctAnswersFacilitating = 7; // number of correct answers for facilitating thought
+let correctAnswersUnderstanding = 6; // number of correct answers for understanding emotions
+let correctAnswersManaging = 5; // number of correct answers for managing emotions
+
+// Points per correct answer
+const pointsPerCorrectAnswer = 10; // assuming each correct answer adds 10 points
+
+// Calculate MSCEIT scores
+let perceivingEmotionsScore = correctAnswersPerceiving * pointsPerCorrectAnswer;
+let facilitatingThoughtScore = correctAnswersFacilitating * pointsPerCorrectAnswer;
+let understandingEmotionsScore = correctAnswersUnderstanding * pointsPerCorrectAnswer;
+let managingEmotionsScore = correctAnswersManaging * pointsPerCorrectAnswer;
+
+// Normalize scores to a maximum of 150 points for each branch
+perceivingEmotionsScore = Math.min(150, perceivingEmotionsScore);
+facilitatingThoughtScore = Math.min(150, facilitatingThoughtScore);
+understandingEmotionsScore = Math.min(150, understandingEmotionsScore);
+managingEmotionsScore = Math.min(150, managingEmotionsScore);
+
+// Calculate final MSCEIT score
+const finalMsceitScore = (perceivingEmotionsScore + facilitatingThoughtScore + understandingEmotionsScore + managingEmotionsScore) / 4;
+
+	  // Interpret MSCEIT scores
+	  let perceivingEmotionsInterpretation = '';
+	  if (perceivingEmotionsScore > 115) {
+		  perceivingEmotionsInterpretation = "You have a strong ability to perceive and identify emotions in yourself and others.";
+	  } else if (perceivingEmotionsScore < 85) {
+		  perceivingEmotionsInterpretation = "You may struggle to recognize emotions in yourself and others.";
+	  } else {
+		  perceivingEmotionsInterpretation = "You have a moderate ability to perceive and identify emotions in yourself and others.";
+	  }
+
+	  let facilitatingThoughtInterpretation = '';
+	  if (facilitatingThoughtScore > 115) {
+		  facilitatingThoughtInterpretation = "You have a strong ability to use emotions to facilitate thought and problem-solving.";
+	  } else if (facilitatingThoughtScore < 85) {
+		  facilitatingThoughtInterpretation = "You may struggle to leverage your emotions to enhance cognitive processes.";
+	  } else {
+		  facilitatingThoughtInterpretation = "You have a moderate ability to use emotions to facilitate thought and problem-solving.";
+	  }
+
+	  let understandingEmotionsInterpretation = '';
+	  if (understandingEmotionsScore > 115) {
+		  understandingEmotionsInterpretation = "You have a deep comprehension of emotional dynamics and can predict emotional reactions.";
+	  } else if (understandingEmotionsScore < 85) {
+		  understandingEmotionsInterpretation = "You may struggle to understand how emotions combine, change, and progress over time.";
+	  } else {
+		  understandingEmotionsInterpretation = "You have a moderate understanding of emotional dynamics.";
+	  }
+
+	  let managingEmotionsInterpretation = '';
+	  if (managingEmotionsScore > 115) {
+		  managingEmotionsInterpretation = "You have a strong ability to manage and regulate your own emotions and the emotions of others.";
+	  } else if (managingEmotionsScore < 85) {
+		  managingEmotionsInterpretation = "You may struggle to effectively control your emotional responses in challenging situations.";
+	  } else {
+		  managingEmotionsInterpretation = "You have a moderate ability to manage and regulate your own emotions and the emotions of others.";
+	  }
+
+	  const userData = {
+		  skills: skills,
+		  scores: [oScore, cScore, eScore, aScore, nScore], // Adjust the order based on your backend expectations
+		  eq_score: finalMsceitScore, // Assuming finalMsceitScore is defined elsewhere
+	  };
+
+	  const url = 'http://127.0.0.1:5000/predict';  // Replace with your endpoint URL
+
+
+	  fetch(url, {
+		  method: 'POST',  // or 'PUT' if you need to update data
+		  headers: {
+			  'Content-Type': 'application/json'
+		  },
+		  body: JSON.stringify(userData)
+	  })
+		  .then(response => {
+			  if (!response.ok) {
+				  throw new Error('Network response was not ok ' + response.statusText);
+			  }
+			  return response.json();
+		  })
+		  .then(data => {
+			  console.log('Success:', data);
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = `
+          <h3></h3>
+          <ul>
+            <h3>Top 5 Job Prediction Results</h3>
+        `;
+
+        data.prediction.forEach((element) => {
+          resultsDiv.innerHTML += `<li>${element}</li>`;
+        });
+
+        resultsDiv.innerHTML += `
+			<h3>Profile Summary</h3>
+          <li>Skills: ${skills}</li>
+          <li>Qualifications: ${qualifications}</li>
+          <li>Your Interests: ${interests}</li>
+          <li>Your Goals: ${goals}</li>
+
+          <h4>OCEAN scores</h4>
+          <li>Openness: ${oScore.toFixed(2)}</li>
+          <li>Conscientiousness: ${cScore.toFixed(2)}</li>
+          <li>Extraversion: ${eScore.toFixed(2)}</li>
+          <li>Agreeableness: ${aScore.toFixed(2)}</li>
+          <li>Neuroticism: ${nScore.toFixed(2)}</li>
+        </ul>
+        <h4>OCEAN Feedback:</h4>
+        <ul>
+          <li>${feedback.Extroversion.feedback}</li>
+          <li>${feedback.Agreeableness.feedback}</li>
+          <li>${feedback.Conscientiousness.feedback}</li>
+          <li>${feedback.Neuroticism.feedback}</li>
+          <li>${feedback.OpennessToExperience.feedback}</li>
+        </ul>
+        <p>MSCEIT scores</p>
+        <ul>
+          <li>Perceiving emotions score: ${perceivingEmotionsScore}</li>
+          <p>${perceivingEmotionsInterpretation}</p>
+          <li>Facilitating thoughts score: ${facilitatingThoughtScore}</li>
+          <p>${facilitatingThoughtInterpretation}</p>
+          <li>Understanding emotions score: ${understandingEmotionsScore}</li>
+          <p>${understandingEmotionsInterpretation}</p>
+          <li>Managing emotions score: ${managingEmotionsScore}</li>
+          <p>${managingEmotionsInterpretation}</p>
+          <li>Final MSCEIT Score: ${finalMsceitScore.toFixed(2)}</li>
+        </ul>
+        `;
+      })
+		  .catch((error) => {
+			  console.error('There was a problem with the fetch operation:', error);
+		  });
+
+	  // Display results
+
+
+
+  })
+
+</script>
+</div>
+
+
+</body>
+</html>
